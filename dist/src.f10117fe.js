@@ -25600,7 +25600,7 @@ function () {
     });
     marker.addListener('click', function () {
       var infoWindow = new google.maps.InfoWindow({
-        content: 'Hi There!'
+        content: mappable.markerContent()
       });
       infoWindow.open(_this.googleMap, marker);
     });
